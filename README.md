@@ -9,6 +9,7 @@ electrodes, catalysts, membranes, rock), but general to any two-phase or
 multi-phase volumetric acquisition.
 
 [![CI](https://github.com/jorgebravoabad/altea/actions/workflows/ci.yml/badge.svg)](https://github.com/jorgebravoabad/altea/actions/workflows/ci.yml)
+[![Docs](https://readthedocs.org/projects/altea/badge/?version=latest)](https://altea.readthedocs.io/en/latest/)
 [![PyPI](https://img.shields.io/pypi/v/altea.svg)](https://pypi.org/project/altea/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21442516.svg)](https://doi.org/10.5281/zenodo.21442516)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -46,6 +47,8 @@ load → quality control → drift correction → preprocessing → segmentation
 | **segment** | Pluggable backends: classical (Otsu, watershed) and learned (random-forest pixel classifier; optional deep U-Net) |
 | **morphometry** | Porosity, specific surface area, pore-size distribution, connectivity/percolation, geometric tortuosity — all voxel-size-aware |
 | **acquire** | Convergence analysis: how few slices suffice for a target accuracy (basis for cost-aware acquisition) |
+
+**Documentation:** <https://altea.readthedocs.io>
 
 ## Install
 
