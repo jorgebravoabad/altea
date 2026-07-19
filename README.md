@@ -9,6 +9,8 @@ electrodes, catalysts, membranes, rock), but general to any two-phase or
 multi-phase volumetric acquisition.
 
 [![CI](https://github.com/jorgebravoabad/altea/actions/workflows/ci.yml/badge.svg)](https://github.com/jorgebravoabad/altea/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/altea.svg)](https://pypi.org/project/altea/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21442516.svg)](https://doi.org/10.5281/zenodo.21442516)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
@@ -126,7 +128,25 @@ Alpha. Interfaces may change before 1.0.
 
 ## Citation
 
-If you use ALTEA, please cite it via [`CITATION.cff`](CITATION.cff).
+If you use ALTEA in your research, please cite the archived software:
+
+> Bravo-Abad, J. (2026). *ALTEA: Autonomous Learning for Tomographic Ensembles
+> and Attributes* (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.21442516
+
+```bibtex
+@software{bravoabad_altea_2026,
+  author    = {Bravo-Abad, Jorge},
+  title     = {{ALTEA: Autonomous Learning for Tomographic Ensembles
+               and Attributes}},
+  year      = {2026},
+  version   = {0.1.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.21442516},
+  url       = {https://doi.org/10.5281/zenodo.21442516}
+}
+```
+
+Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## License
 

@@ -14,15 +14,16 @@ authors:
 version: 0.1.0
 date-released: 2026-07-19
 license: MIT
+doi: 10.5281/zenodo.21442516
 repository-code: "https://github.com/jorgebravoabad/altea"
 url: "https://github.com/jorgebravoabad/altea"
-# After the first Zenodo release, uncomment and paste the concept DOI
-# (the one that always resolves to the latest version):
-# doi: 10.5281/zenodo.XXXXXXX
-# identifiers:
-#   - type: doi
-#     value: 10.5281/zenodo.XXXXXXX
-#     description: "Concept DOI (all versions)"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21442516
+    description: "Zenodo archive of ALTEA"
+  - type: url
+    value: "https://pypi.org/project/altea/"
+    description: "PyPI package"
 keywords:
   - tomography
   - FIB-SEM
