@@ -1,0 +1,38 @@
+# Default ALTEA configuration for FIB-SEM stacks of a two-phase porous material.
+# Every parameter here is captured verbatim in the run's provenance record.
+
+qc:
+  enabled: true
+  params:
+    sharpness_z: -2.5        # drop slices far below typical sharpness (blur)
+    brightness_z: 3.0        # drop brightness outliers (charging)
+    drift_z: 3.0             # drop abnormally large inter-slice shifts
+    curtaining_z: 3.0        # drop strongly streaked slices
+    min_keep_fraction: 0.5   # safety floor against over-rejection
+
+align:
+  enabled: true
+  upsample_factor: 10        # sub-pixel drift correction
+
+preprocess:
+  enabled: true
+  denoise:
+    method: median           # median | gaussian | bilateral | nlmeans
+    size: 3
+  normalize:
+    method: percentile       # percentile | clahe
+    low_percentile: 1.0
+    high_percentile: 99.0
+
+segment:
+  backend: otsu              # otsu | watershed | pixel_rf | unet
+  params:
+    invert: true             # pore phase is darker than the solid
+    mode: global
+  # phase_label: 1           # set when using a multi-class learned backend
+  # labels: path/to/sparse_labels.tif   # required for the pixel_rf backend
+
+morphometry:
+  enabled: true
+  compute_tortuosity: true
+  psd_bins: 20

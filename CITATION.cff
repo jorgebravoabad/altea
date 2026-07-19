@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use ALTEA in your research, please cite it as below."
+title: "ALTEA: Autonomous Learning for Tomographic Ensembles and Attributes"
+abstract: >-
+  A reproducible, provenance-tracked pipeline for automated quality control,
+  segmentation and 3D morphometry of tomographic image stacks (e.g. FIB-SEM),
+  with a focus on porous and heterogeneous materials.
+type: software
+authors:
+  - family-names: "Bravo-Abad"
+    given-names: "Jorge"
+    affiliation: "Universidad Autonoma de Madrid"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/jorgebravoabad/altea"
+keywords:
+  - tomography
+  - FIB-SEM
+  - image segmentation
+  - morphometry
+  - porous media
+  - reproducibility

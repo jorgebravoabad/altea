@@ -1,0 +1,25 @@
+# Example configuration using the learned random-forest pixel classifier.
+# Requires sparse annotations (a few labeled slices) via `labels`.
+
+qc:
+  enabled: true
+  params: {min_keep_fraction: 0.5}
+
+align: {enabled: true}
+
+preprocess:
+  denoise: {method: bilateral, bilateral_sigma_color: 0.1}
+  normalize: {method: clahe, clip_limit: 0.01}
+
+segment:
+  backend: pixel_rf
+  phase_label: 1
+  labels: data/sparse_labels.tif
+  params:
+    sigmas: [1.0, 2.0, 4.0]
+    n_estimators: 200
+    random_state: 0
+
+morphometry:
+  enabled: true
+  compute_tortuosity: true
