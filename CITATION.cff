@@ -9,10 +9,20 @@ type: software
 authors:
   - family-names: "Bravo-Abad"
     given-names: "Jorge"
-    affiliation: "Universidad Autonoma de Madrid"
+    orcid: "https://orcid.org/0000-0001-6876-8022"
+    affiliation: "Universidad Autónoma de Madrid"
 version: 0.1.0
+date-released: 2026-07-19
 license: MIT
 repository-code: "https://github.com/jorgebravoabad/altea"
+url: "https://github.com/jorgebravoabad/altea"
+# After the first Zenodo release, uncomment and paste the concept DOI
+# (the one that always resolves to the latest version):
+# doi: 10.5281/zenodo.XXXXXXX
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.XXXXXXX
+#     description: "Concept DOI (all versions)"
 keywords:
   - tomography
   - FIB-SEM
